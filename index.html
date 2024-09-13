@@ -1,0 +1,260 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>INSTAGRAM POST (con Bootstrap)</title>
+</head>
+
+<body>
+    <div class="navbar navbar-light bg-light fixed-top">
+        <div class="container d-flex justify-content-between">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <i class="fab fa-instagram text-secondary fa-3x"></i>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2a%2FInstagram_logo.svg%2F1280px-Instagram_logo.svg.png&f=1&nofb=1"
+                    with="42em" height="42em">
+            </a>
+            <div class="form-inline">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#createModalNewPost">
+                    Create a new post
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Accesibility</a>
+                        <a class="dropdown-item" href="#">Privaty and Data</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="mt-5 pt-5" role="main">
+        <div class="container-fluid">
+            <div class="nav flex-row nav-pills justify-content-center py-2" id="v-pills-tab" role="tablist"
+                aria-orientation="horizontal">
+                <a class="nav-link active bg-light mr-1" id="v-pills-grid-tab" data-toggle="pill" href="#v-pills-grid"
+                    role="tab" aria-controls="v-pills-grid" aria-selected="true">
+                    <i class="fas fa-th fa-1x text-secondary shadow-lg"></i>
+                </a>
+                <a class="nav-link bg-light" id="v-pills-cards-tab" data-toggle="pill" href="#v-pills-cards" role="tab"
+                    aria-controls="v-pills-cards" aria-selected="false">
+                    <i class="fas fa-square fa-1x text-secondary"></i>
+                </a>
+            </div>
+
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-grid" role="tabpanel" aria-labelledby="v-pills-grid-tab">
+                    <div class="row">
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="https://img.freepik.com/vector-gratis/pegatina-vintage-globo-dibujos-animados-png_53876-127373.jpg?t=st=1726133586~exp=1726137186~hmac=edc1432972b430389051d6f021f276bf67cabbddbb23481355f3c188d0225d92&w=740"
+                                    alt="Dibujo Mundo">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="https://img.freepik.com/foto-gratis/foto-deliciosa-hamburguesa-aislado-sobre-fondo-blanco_125540-3378.jpg?t=st=1726133680~exp=1726137280~hmac=40ff23e8e2450faa2ceb7af130d8f57d4cce3ea55eca6798d5e85da91dfaff1f&w=996"
+                                    alt="Hamburguesa">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="https://img.freepik.com/psd-premium/pajaro-purpura-rosado-pico-porpura-patas-amarillas_1217673-236141.jpg?w=740"
+                                    alt="Aguila rosa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="https://img.freepik.com/foto-gratis/ilustracion-3d-perro-pastor-aleman_183364-80982.jpg?t=st=1726133807~exp=1726137407~hmac=d164537140379ef3b856e51511ad19603bb2399b0e5215803230372948e0afbb&w=360"
+                                    alt="Perro motorista">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="https://as2.ftcdn.net/v2/jpg/05/32/82/65/1000_F_532826579_F6LQvqtWOtLdzYq3rCSOu5oFmZmzJoIg.webp"
+                                    alt="Astronauta">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="https://img.freepik.com/foto-gratis/divertido-personaje-dibujos-animados-perro-pastor-aleman-mochilero_183364-80976.jpg?t=st=1726133899~exp=1726137499~hmac=cf6d22828febc8b53d83e9a0115ae21fdce76293ac402cb8fb689622bc55e28a&w=740"
+                                    alt="Perro peregrino">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="https://img.freepik.com/fotos-premium/divertido-medico-indio-dibujos-animados-3d_183364-115336.jpg?w=360"
+                                    alt="El euro">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="https://www.shutterstock.com/shutterstock/photos/2505319987/display_1500/stock-photo-a-young-hispanic-man-with-a-beard-smiles-while-listening-to-a-voice-message-on-his-phone-on-a-sunny-2505319987.jpg"
+                                    alt="Perroflauta">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="https://as1.ftcdn.net/v2/jpg/04/91/71/52/1000_F_491715288_s6Lm6mhNUFIpZldYH5uJZfs3lT399ZEv.jpg"
+                                    alt="Mancha negra">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="tab-pane fade" id="v-pills-cards" role="tabpanel" aria-labelledby="v-pills-cards-tab">
+                    <div class="row bg-light py-4">
+
+                        <div class="container">
+                            <div class="row justify-content-md-center">
+                                <div class="col-md-8 mx-auto pt-3">
+                                    <div class="card">
+                                        <div class="card-header bg-white d-flex justify-content-between">
+                                            <h4>Mi primer post</h4>
+                                            <span class="text-muted">12/1</span>
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="https://img.freepik.com/fotos-premium/divertida-ilustracion-dibujos-animados-3d-cerdo-rockero_183364-115585.jpg?w=996"
+                                            alt="Cerdo conductor">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark">83 Likes</h5>
+                                            <p class="card-text">Esto es un ejemplo de un post de instagram</p>
+                                            <p class="card-text"><span class="text-muted mr-2"><i
+                                                        class="far fa-heart fa-1x"></i></span><span
+                                                    class="text-muted">Comentarios</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mx-auto pt-3">
+                                    <div class="card">
+                                        <div class="card-header bg-white d-flex justify-content-between">
+                                            <h4>Mi primer post</h4>
+                                            <span class="text-muted">12/2</span>
+                                        </div>
+                                        <img class="card-img-top" 
+                                        src="https://www.shutterstock.com/shutterstock/photos/2482907095/display_1500/stock-photo-head-shot-of-a-man-with-a-receding-hairline-on-a-white-background-male-pattern-baldness-2482907095.jpg" 
+                                        alt="Calvo">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark">83 Likes</h5>
+                                            <p class="card-text">Esto es un ejemplo de un post de instagram</p>
+                                            <p class="card-text"><span class="text-muted mr-2"><i
+                                                        class="far fa-heart fa-1x"></i></span><span
+                                                    class="text-muted">Comentarios</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mx-auto pt-3">
+                                    <div class="card">
+                                        <div class="card-header bg-white d-flex justify-content-between">
+                                            <h4>Mi primer post</h4>
+                                            <span class="text-muted">12/3</span>
+                                        </div>
+                                        <img class="card-img-top" 
+                                        src="https://as2.ftcdn.net/v2/jpg/02/76/47/25/1000_F_276472512_1H6KCchUgtdafTwy6elHaRyBK7dvPFeH.jpg" 
+                                        alt="Mochila">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark">83 Likes</h5>
+                                            <p class="card-text">Esto es un ejemplo de un post de instagram</p>
+                                            <p class="card-text"><span class="text-muted mr-2"><i class="far fa-heart fa-1x"></i></span><span class="text-muted">Comment...</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8 mx-auto pt-3">
+                                    <div class="card">
+                                        <div class="card-header bg-white d-flex justify-content-between">
+                                            <h4>Mi primer post</h4>
+                                            <span class="text-muted">12/4</span>
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="https://img.freepik.com/foto-gratis/mujer-sonriente-hablando-telefono-plano-medio_23-2149476757.jpg?t=st=1726134616~exp=1726138216~hmac=efb3b78a3c97f6d21f9d6121a88d357ff86fce886682f5b9e541bb7c3a5ad473&w=1060"
+                                            alt="Mujer de">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark">83 Likes</h5>
+                                            <p class="card-text">Esto es un ejemplo de un post de instagram</p>
+                                            <p class="card-text"><span class="text-muted mr-2"><i
+                                                        class="far fa-heart fa-1x"></i></span><span
+                                                    class="text-muted">Comentarios</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="createModalNewPost" tabindex="-1" role="dialog"
+        aria-labelledby="createModalNewPostTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                    <i class="fas fa-camera fa-border"></i>
+                    <i class="fas fa-map-marker-alt fa-border"></i>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">cancel</button>
+                    <button type="button" class="btn btn-success">publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
